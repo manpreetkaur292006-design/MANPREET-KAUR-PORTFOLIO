@@ -1,3 +1,8 @@
+import FocusBee from '../assets/projects/FocusBee.png'
+import EventDashBoard from '../assets/projects/EventDashBoard.png'
+import Weather from '../assets/projects/Weather.png'
+import ScoreBoard from '../assets/projects/ScoreBoard.png'
+
 const projects = [
   {
     id: 1,
@@ -7,7 +12,7 @@ const projects = [
     tech: ["React", "JavaScript", "HTML", "CSS", "React Router"],
     github: "https://github.com/manpreetkaur292006-design/Focus-Bee.git",
     live: "https://focusbee.netlify.app/",
-    image: "./assets/projects/FocusBee.png"
+    image: FocusBee
   },
 
   {
@@ -18,7 +23,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/manpreetkaur292006-design/SMART-EVENT-DASHBOARD-JS.git",
     live: "https://inspiring-pika-f419eb.netlify.app/",
-    image: "./assets/projects/EventDashBoard.png"
+    image: EventDashBoard
   },
 
   {
@@ -29,7 +34,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "API"],
     github: "https://github.com/manpreetkaur292006-design/ASYNC-WEATHER-TRACKER.git",
     live: "https://manu-weather-api.netlify.app/",
-    image: "./assets/projects/Weather.png"
+    image: Weather
   },
 
   {
@@ -40,7 +45,7 @@ const projects = [
     tech: ["React", "JavaScript", "CSS"],
     github: "https://github.com/manpreetkaur292006-design/Student-ScoreBoard.git",
     live: "https://student-score-board.netlify.app/",
-    image: "./assets/projects/ScoreBoard.png"
+    image: ScoreBoard
   },
 
   {
