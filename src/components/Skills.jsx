@@ -7,7 +7,7 @@ const skillsData = {
   tools: ["Git", "GitHub", "VS Code", "Linux", "Netlify"],
   design: ["Figma", "Miro", "Canva"],
   productivity: ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint"],
-  learning: ["Full-Stack Development"]
+  learning: ["Advanced React Patterns","Full-Stack Development"]
 };
 
 const Skills = () => {
