@@ -1,10 +1,11 @@
 import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <div id='footer'>
+    <section id='footer'>
 
-    </div>
+    </section>
   )
 }
 

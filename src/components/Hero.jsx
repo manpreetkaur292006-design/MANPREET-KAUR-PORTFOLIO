@@ -1,10 +1,12 @@
 import React from 'react'
+import './Hero.css'
 
 const Hero = () => {
   return (
-    <div id='hero'>
-
-    </div>
+    <section id='hero'>
+      <h1>Hi, I'm Manpreet Kaur</h1>
+      <h2>Frontend Developer</h2>
+    </section>
   )
 }
 
