@@ -5,9 +5,10 @@ const Navbar = () => {
   return (
     <nav id='navbar'>
       <div className='container navbar-container'>
-        <div className='logo'>
+
+        <a href="#hero" className='logo'>
           MK
-        </div>
+        </a>
 
         <ul className='nav-links'>
           <li><a href="#about">About</a></li>
@@ -16,9 +17,13 @@ const Navbar = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <a href='/Manpreet_Kaur.pdf' className='resume-btn'>
-          Resume
+        <a
+          href='/Manpreet_Kaur.pdf'
+          className='resume-btn'
+        >
+          View Resume
         </a>
+
       </div>
     </nav>
   )

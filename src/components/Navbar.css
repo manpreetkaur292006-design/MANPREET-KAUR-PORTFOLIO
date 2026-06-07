@@ -4,7 +4,11 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--bg-primary);
+
+  background-color: rgba(5, 15, 40, 0.95);
+
+  backdrop-filter: blur(10px);
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -21,13 +25,19 @@
 
 .logo {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 800;
+
   color: var(--text-primary);
-  cursor: pointer;
-  transition: var(--transition);
+
+  transition: 0.3s ease;
 }
 
 .logo:hover {
+  color: var(--accent);
+}
+
+.logo::after {
+  content: ".";
   color: var(--accent);
 }
 
@@ -36,29 +46,64 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
+}
+
+.nav-links li {
+  list-style: none;
 }
 
 .nav-links a {
+  position: relative;
+
   color: var(--text-secondary);
+
   font-size: 1rem;
   font-weight: 500;
-  transition: var(--transition);
+
+  transition: 0.3s ease;
 }
 
 .nav-links a:hover {
   color: var(--accent);
 }
 
+/* Underline Animation */
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+
+  background-color: var(--accent);
+
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 /* RESUME BUTTON */
 
 .resume-btn {
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 1.5rem;
+
   background-color: var(--accent);
+
   color: white;
+
   border-radius: 8px;
+
   font-weight: 600;
-  transition: var(--transition);
+
+  transition: 0.3s ease;
 }
 
 .resume-btn:hover {
@@ -70,12 +115,13 @@
 /* TABLET */
 
 @media (max-width: 768px) {
+
   .navbar-container {
     min-height: 70px;
   }
 
   .nav-links {
-    gap: 1rem;
+    gap: 1.2rem;
   }
 
   .resume-btn {
@@ -86,16 +132,17 @@
 /* MOBILE */
 
 @media (max-width: 600px) {
+
   .nav-links {
     display: none;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 
   .resume-btn {
     padding: 0.7rem 1rem;
     font-size: 0.9rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
   }
 }
