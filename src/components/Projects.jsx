@@ -24,7 +24,7 @@ const Projects = () => {
               </div>
 
               <div className="project-links">
-                <a href={project.github} target='_blank' rel='noreferrer'>Github</a>
+                <a href={project.github} target='_blank' rel='noreferrer'>GitHub</a>
                 <a href={project.live} target="_blank" rel='noreferrer'>Live Demo</a>
               </div>
             </div>
