@@ -1,52 +1,99 @@
 #skills {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 .skills-container h2 {
   text-align: center;
+
   font-size: 2.5rem;
+
   color: var(--accent);
+
   margin-bottom: 3rem;
 }
 
+/* SKILL CATEGORY CARD */
+
 .skills-category {
-  margin-bottom: 2rem;
+  background-color: var(--bg-secondary);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 12px;
+
+  padding: 1.5rem;
+
+  margin-bottom: 1.5rem;
+
+  transition: 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-4px);
 }
 
 .skills-category h3 {
-  margin-bottom: 1rem;
-  color: var(--text-primary);
+  text-align: center;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--accent);
+
+  font-size: 1.2rem;
 }
+
+/* SKILLS LIST */
 
 .skills-list {
   display: flex;
+
   flex-wrap: wrap;
-  gap: 1rem;
+
+  justify-content: center;
+
+  gap: 0.8rem;
 }
 
+/* SKILL BADGES */
+ 
 .skill-badge {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
+
   color: var(--text-primary);
+
   padding: 0.8rem 1.2rem;
+
   border-radius: 8px;
-  transition: var(--transition);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.3s ease;
+
+  cursor: default;
 }
 
 .skill-badge:hover {
-  transform: translateY(-3px);
   background-color: var(--accent);
+
+  color: white;
+
+  transform: translateY(-3px);
 }
 
+/* MOBILE */
+
 @media (max-width: 768px) {
+
   .skills-container h2 {
     font-size: 2rem;
   }
 
-  .skills-list {
-    justify-content: center;
+  .skills-category {
+    padding: 1rem;
   }
 
-  .skills-category h3 {
-    text-align: center;
+  .skill-badge {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
   }
 }
