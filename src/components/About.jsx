@@ -1,73 +1,87 @@
-import React from 'react'
-import './About.css'
-import profile from '../assets/profile.jpeg'
+import React from "react";
+import "./About.css";
+import AboutImage from "../assets/aboutImage.jpeg";
 
 const About = () => {
   return (
-    <section id='about'>
+    <section id="about">
       <div className="container about-container">
-
         <div className="about-image">
-          <img src={profile} alt="Manpreet Kaur" />
+          <img
+            src={AboutImage}
+            alt="Manpreet Kaur presenting during an acadamic session"
+          />
+
+          <p className="about-caption">
+            Delivering a technical presentation during an academic session.
+          </p>
         </div>
 
         <div className="about-content">
-
           <h2>About Me</h2>
 
           <p>
-            I'm Manpreet Kaur, a Computer Science Engineering student
-            and frontend developer who enjoys turning ideas into
-            functional, responsive web applications.
+            I'm Manpreet Kaur, a B.Tech Computer Science Engineering student and
+            frontend developer passionate about building responsive and
+            user-friendly web applications.
           </p>
 
           <p>
-            My journey in technology started with curiosity and has grown
-            into a passion for building web experiences using HTML, CSS,
-            JavaScript, and React. I enjoy creating clean user interfaces,
-            learning modern development practices, and improving my problem-solving
-            abilities through hands-on projects.
+            My journey into technology started with curiosity and gradually
+            evolved into a strong interest in web development, problem-solving,
+            and software engineering. I enjoy transforming ideas into practical
+            solutions using React.js, JavaScript, HTML, and CSS.
           </p>
 
           <p>
-            Beyond coding, I have experience teaching and mentoring students,
-            which has strengthened my communication, leadership, and teamwork
-            skills. These experiences have taught me how to explain complex
-            ideas clearly, collaborate effectively, and approach challenges
-            with patience and persistence.
+            Beyond coding, I have more than four years of teaching and mentoring
+            experience, guiding students in their academic journey and helping
+            them achieve their goals. This experience strengthened my
+            communication, leadership, patience, and problem-solving abilities.
           </p>
 
           <p>
-            Currently, I'm expanding my knowledge of modern frontend development,
-            full-stack technologies, and software engineering best practices.
-            My goal is to become a skilled software developer who builds impactful
-            products and contributes to meaningful projects.
+            Currently pursuing B.Tech in Computer Science Engineering with a
+            9.91 CGPA, I am continuously expanding my knowledge in full-stack
+            development, cybersecurity, open-source collaboration, and modern
+            software development practices.
           </p>
 
           <div className="about-info">
-
             <div className="info-card">
               <h4>Education</h4>
-              <p>Computer Science Engineering Student</p>
+              <p>B.Tech Computer Science Engineering</p>
+            </div>
+
+            <div className="info-card">
+              <h4>Academic Excellence</h4>
+              <p>9.91 CGPA</p>
+            </div>
+
+            <div className="info-card">
+              <h4>Experience</h4>
+              <p>4+ Years Teaching & Mentoring</p>
             </div>
 
             <div className="info-card">
               <h4>Focus</h4>
-              <p>Frontend Development & React</p>
+              <p>Frontend Development & React.js</p>
             </div>
 
             <div className="info-card">
-              <h4>Learning</h4>
-              <p>TypeScript & Full-Stack Development</p>
+              <h4>Currently Learning</h4>
+              <p>Full-Stack Development & Cybersecurity</p>
             </div>
 
+            <div className="info-card">
+              <h4>Goal</h4>
+              <p>Software Engineer & Problem Solver</p>
+            </div>
           </div>
-
         </div>
-
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
