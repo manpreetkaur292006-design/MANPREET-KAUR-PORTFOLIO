@@ -4,20 +4,16 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-
   background-color: rgba(5, 15, 40, 0.95);
-
-  backdrop-filter: blur(10px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* CONTAINER */
 
 .navbar-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   min-height: 80px;
 }
 
@@ -26,64 +22,51 @@
 .logo {
   font-size: 1.8rem;
   font-weight: 800;
-
-  color: var(--text-primary);
-
-  transition: 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .logo:hover {
-  color: var(--accent);
+  color: #3b82f6;
 }
 
 .logo::after {
   content: ".";
-  color: var(--accent);
+  color: #3b82f6;
 }
 
-/* NAV LINKS */
+/* NAVIGATION LINKS */
 
 .nav-links {
   display: flex;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.nav-links li {
+  gap: 2rem;
   list-style: none;
 }
 
 .nav-links a {
-  position: relative;
-
-  color: var(--text-secondary);
-
-  font-size: 1rem;
+  text-decoration: none;
+  color: #cbd5e1;
   font-weight: 500;
-
-  transition: 0.3s ease;
+  transition: 0.3s;
+  position: relative;
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: #3b82f6;
 }
 
 /* Underline Animation */
 
 .nav-links a::after {
   content: "";
-
   position: absolute;
-
   left: 0;
   bottom: -5px;
-
   width: 0;
   height: 2px;
-
-  background-color: var(--accent);
-
-  transition: 0.3s ease;
+  background-color: #3b82f6;
+  transition: 0.3s;
 }
 
 .nav-links a:hover::after {
@@ -93,35 +76,25 @@
 /* RESUME BUTTON */
 
 .resume-btn {
-  padding: 0.8rem 1.5rem;
-
-  background-color: var(--accent);
-
+  text-decoration: none;
+  background-color: #3b82f6;
   color: white;
-
+  padding: 0.8rem 1.5rem;
   border-radius: 8px;
-
   font-weight: 600;
-
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .resume-btn:hover {
   transform: translateY(-2px);
-
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
 }
 
 /* TABLET */
 
 @media (max-width: 768px) {
-
-  .navbar-container {
-    min-height: 70px;
-  }
-
   .nav-links {
-    gap: 1.2rem;
+    gap: 1rem;
   }
 
   .resume-btn {
@@ -142,7 +115,7 @@
   }
 
   .resume-btn {
-    padding: 0.7rem 1rem;
     font-size: 0.9rem;
+    padding: 0.7rem 1rem;
   }
 }
