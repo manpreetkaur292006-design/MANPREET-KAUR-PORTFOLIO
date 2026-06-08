@@ -1,27 +1,48 @@
+/* CONTACT SECTION */
+
 #contact {
-  padding: 6rem 0;
+  padding: 7rem 0;
 }
 
 .contact-container {
   text-align: center;
 }
 
+/* HEADING */
+
 .contact-container h2 {
   font-size: 2.5rem;
+
   color: var(--accent);
+
   margin-bottom: 1rem;
 }
 
-.contact-container p {
-  max-width: 650px;
-  margin: 0 auto 2.5rem;
+.contact-description {
+  max-width: 700px;
+
+  margin: 0 auto 1.5rem;
 
   color: var(--text-secondary);
 
   line-height: 1.8;
 }
 
-/* CONTACT BUTTONS */
+/* EMAIL */
+
+.contact-email {
+  margin-top: 1.5rem;
+
+  margin-bottom: 2rem;
+
+  color: var(--accent);
+
+  font-weight: 600;
+
+  font-size: 1rem;
+}
+
+/* BUTTONS */
 
 .contact-links {
   display: flex;
@@ -31,12 +52,20 @@
   flex-wrap: wrap;
 
   gap: 1rem;
+
+  margin-top: 1rem;
 }
 
 .contact-btn {
-  padding: 0.9rem 1.8rem;
+  display: flex;
 
-  border-radius: 8px;
+  align-items: center;
+
+  gap: 0.6rem;
+
+  padding: 0.9rem 1.5rem;
+
+  border-radius: 10px;
 
   background-color: var(--bg-secondary);
 
@@ -44,29 +73,50 @@
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 
   background-color: var(--accent);
 
   color: white;
+
+  border-color: var(--accent);
+
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
 }
+
+/* RESUME BUTTON */
 
 .resume-contact {
   background-color: var(--accent);
+
   color: white;
 }
 
 .resume-contact:hover {
-  opacity: 0.9;
+  opacity: 0.95;
+}
+
+/* FOOTNOTE */
+
+.contact-note {
+  margin-top: 2rem;
+
+  font-size: 0.95rem;
+
+  color: var(--text-secondary);
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
+
+  #contact {
+    padding: 5rem 0;
+  }
 
   .contact-container h2 {
     font-size: 2rem;
@@ -74,10 +124,13 @@
 
   .contact-links {
     flex-direction: column;
+
     align-items: center;
   }
 
   .contact-btn {
-    width: 220px;
+    width: 240px;
+
+    justify-content: center;
   }
 }
