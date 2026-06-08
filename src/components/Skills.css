@@ -1,5 +1,5 @@
 #skills {
-  padding: 6rem 0;
+  padding: 7rem 0;
 }
 
 .skills-container h2 {
@@ -12,24 +12,28 @@
   margin-bottom: 3rem;
 }
 
-/* SKILL CATEGORY CARD */
+/* CATEGORY CARD */
 
 .skills-category {
   background-color: var(--bg-secondary);
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  border-radius: 12px;
+  border-radius: 14px;
 
   padding: 1.5rem;
 
   margin-bottom: 1.5rem;
 
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .skills-category:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+
+  border-color: var(--accent);
+
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
 }
 
 .skills-category h3 {
@@ -55,7 +59,7 @@
 }
 
 /* SKILL BADGES */
- 
+
 .skill-badge {
   background-color: var(--bg-primary);
 
@@ -67,7 +71,9 @@
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  transition: 0.3s ease;
+  font-size: 0.95rem;
+
+  transition: all 0.3s ease;
 
   cursor: default;
 }
@@ -77,12 +83,26 @@
 
   color: white;
 
+  border-color: var(--accent);
+
   transform: translateY(-3px);
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .skills-container h2 {
+    font-size: 2.2rem;
+  }
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
+
+  #skills {
+    padding: 5rem 0;
+  }
 
   .skills-container h2 {
     font-size: 2rem;
@@ -94,6 +114,7 @@
 
   .skill-badge {
     padding: 0.7rem 1rem;
+
     font-size: 0.9rem;
   }
 }
