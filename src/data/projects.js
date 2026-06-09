@@ -2,6 +2,7 @@ import FocusBee from '../assets/projects/FocusBee.png'
 import EventDashBoard from '../assets/projects/EventDashBoard.png'
 import Weather from '../assets/projects/Weather.png'
 import ScoreBoard from '../assets/projects/ScoreBoard.png'
+import decorUrvora from '../assets/projects/decorUrvora.png'
 
 const projects = [
   {
@@ -54,9 +55,9 @@ const projects = [
     description:
       "A collaborative project focused on building a responsive e-commerce website.",
     tech: ["HTML", "CSS", "JavaScript", "Git"],
-    github: "https://github.com/chandraprakashmishra18/Projexa-Repo.git",
-    live: "https://projexa-repo.vercel.app/",
-    image: ""
+    github: "https://github.com/manpreetkaur292006-design/Decor-Section-URVORA.git",
+    live: "https://urvora-decor-section.netlify.app/",
+    image: decorUrvora
   }
 ];
 
