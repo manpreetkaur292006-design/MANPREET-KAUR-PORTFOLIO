@@ -6,23 +6,16 @@
 
 .achievements-container h2 {
   text-align: center;
-
   font-size: 2.5rem;
-
   color: var(--accent);
-
   margin-bottom: 1rem;
 }
 
 .achievements-subtitle {
   max-width: 700px;
-
   margin: 0 auto 3rem;
-
   text-align: center;
-
   color: var(--text-secondary);
-
   line-height: 1.8;
 }
 
@@ -30,31 +23,22 @@
 
 .achievement-stats {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 1rem;
-
   margin-bottom: 3rem;
 }
 
 .stat-card {
   background-color: var(--bg-secondary);
-
   padding: 1.5rem;
-
   border-radius: 12px;
-
   text-align: center;
-
   border: 1px solid rgba(255,255,255,0.08);
 }
 
 .stat-card h3 {
   color: var(--accent);
-
   font-size: 2rem;
-
   margin-bottom: 0.5rem;
 }
 
@@ -66,47 +50,36 @@
 
 .achievements-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 1.5rem;
 }
 
 .achievement-card {
   background-color: var(--bg-secondary);
-
   padding: 1.5rem;
-
   border-radius: 14px;
-
   border: 1px solid rgba(255,255,255,0.08);
-
   transition: 0.3s ease;
 }
 
 .achievement-card:hover {
   transform: translateY(-6px);
-
   border-color: var(--accent);
-
   box-shadow: 0 10px 25px rgba(59,130,246,0.15);
 }
 
 .achievement-icon {
   font-size: 2rem;
-
   margin-bottom: 1rem;
 }
 
 .achievement-card h3 {
   color: var(--accent);
-
   margin-bottom: 0.8rem;
 }
 
 .achievement-card p {
   color: var(--text-secondary);
-
   line-height: 1.7;
 }
 
@@ -114,45 +87,33 @@
 
 .certifications-section {
   margin-top: 4rem;
-
   text-align: center;
 }
 
 .certifications-section h3 {
   color: var(--accent);
-
   margin-bottom: 1.5rem;
-
   font-size: 1.5rem;
 }
 
 .certifications-list {
   display: flex;
-
   flex-wrap: wrap;
-
   justify-content: center;
-
   gap: 1rem;
 }
 
 .certificate-badge {
   background-color: var(--bg-secondary);
-
   color: var(--text-primary);
-
   padding: 0.8rem 1.2rem;
-
   border-radius: 30px;
-
   border: 1px solid rgba(255,255,255,0.08);
-
   transition: 0.3s ease;
 }
 
 .certificate-badge:hover {
   background-color: var(--accent);
-
   color: white;
 }
 
